@@ -1,8 +1,9 @@
 <div>
+    <p wire:loading>Carregando...</p>
+
     @if($contacts->isEmpty())
         <p>Sua lista de contatos está vazia. Use o formulário para adicionar um novo contato.</p>
     @else
-        <p wire:loading>Carregando...</p>
 
         <ul wire:loading.remove>
             @foreach($contacts as $contact)

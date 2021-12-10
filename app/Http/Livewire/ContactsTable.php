@@ -23,6 +23,8 @@ class ContactsTable extends Component
 
     protected function getContacts()
     {
+        sleep(5);
+
         return Contact::orderBy('created_at', 'DESC')
                         ->paginate(10);
     }
