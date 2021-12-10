@@ -5,5 +5,5 @@
         </h2>
     </x-slot>
 
-    <x-jet-welcome />
+    <livewire:contacts-table></livewire:contacts-table>
 </x-app-layout>
